@@ -432,9 +432,6 @@ ul.text_heading > li:before {
   position: relative;
   top: 20px;
   left: 20px;
-}
-
-.button_buy a {
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
