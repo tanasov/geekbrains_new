@@ -309,13 +309,11 @@ ul.text_heading > li:before {
     position: relative;
     top: 20px;
     left: 20px;
-    a {
-        font-size: 18px;
-        line-height: 18px;
-        font-weight: 700;
-        color: #445161;
-        text-transform: uppercase;
-    }
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #445161;
+    text-transform: uppercase;
 }
 /* Footer */
 .footer {
