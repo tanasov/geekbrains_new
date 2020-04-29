@@ -1,3 +1,5 @@
+$width: 1280px;
+
 @mixin heading_section {
     font-size: 30px;
     line-height: 36px;
@@ -12,6 +14,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 h1, h2, h3, h4, h5, h6, p, a {
     padding: 0;
@@ -23,8 +26,16 @@ a {
 ul li {
     list-style-type: none;
 }
+svg path {
+    stroke:inherit;
+    stroke-width:inherit;
+    fill:inherit;
+    }
+:focus {
+    outline: 0;
+}
 body {
-    max-width: 1280px;
+    max-width: $width;
     margin: 0 auto;
     box-sizing: border-box;
     font-family: ArialMT;
@@ -35,12 +46,13 @@ body {
 }
 /* Блок header */
 .header {
-    padding-top: 50px;
+    padding: 50px;
     max-width: 100%;
     min-height: 323px;
     background-color: #445162;
     display: flex;
-    justify-content: space-around;
+    outline: 1px solid #445162;
+    justify-content: space-between;
     max-width: 100%;
     @media screen and (max-width: 1178px) {
         display: grid;
@@ -63,29 +75,25 @@ ul.text_heading > li:before {
     color: #fff;
 }
 .text_heading {
-    padding-top: 50px;
+    margin: 30px 0 0 0;
     font-size: 20px;
     line-height: 36px;
     font-weight: 400;
     color: #ffffff;
 }
 .img_header {
-    max-width: 469px;
-    max-height: 214px;
-    position: relative;
-    left: 50px;
     @media screen and (max-width: 1178px) {
         position: static;
     }
 }
 // 1 Блок //
 .section_1 {
-    padding-top: 50px;
-    max-width: 100%;
+    padding: 50px;
+    width: 100%;
     min-height: 343px;
     display: flex;
     min-height: 245px;
-    justify-content: center;
+    justify-content: space-between;
     max-width: 100%;
     @media screen and (max-width: 1178px) {
         display: grid;
@@ -97,13 +105,9 @@ ul.text_heading > li:before {
 .texts_section_1 {
     max-width: 653px;
     min-height: 63px;
-    padding-top: 30px;
+    margin: 20px 0 0 0;
 }
 .img_section_1 {
-    position: relative;
-    left: 60px;
-    max-width: 430px;
-    height: 245px;
     @media screen and (max-width: 1178px) {
         padding-top: 20px;
     }
@@ -112,13 +116,14 @@ ul.text_heading > li:before {
 .section_2 {
     max-width: 100%;
     min-height: 400px;
-    margin-top: 50px;
-    padding-top: 50px;
+    margin: 0;
+    padding: 50px;
     background-color: #f5f5f5;
 }
 .heading_section_2 {
     @include heading_section;
     text-align: center;
+    margin: 0 0 20px 0;
 }
 .detectus {
     display: grid;
@@ -138,7 +143,7 @@ ul.text_heading > li:before {
     font-size: 16px;
     max-width: 540px;
     min-height: 63px;
-    margin: 0 0 40px 0;
+    padding: 0 0 0 30px;
     position: relative;
     &:before {
         content: "+";
@@ -155,14 +160,19 @@ ul.text_heading > li:before {
         left: -46px;
     }
 }
+.dignity_list_item:last-child {
+    margin: 0;
+    }
 /* 3 Блок */
 .section_3 {
-    padding-top: 50px;
+    margin: 0;
+    padding: 50px;
     max-width: 100%;
     min-height: 400px;
 }
 .heading_section_3 {
     @include heading_section;
+    margin: 0 0 20px 0;
     text-align: center;
 }
 .headig_description {
@@ -176,8 +186,7 @@ ul.text_heading > li:before {
     grid-template-columns: repeat(2, 584px);
     grid-column-gap: 20px;
     grid-row-gap: 30px;
-    padding-top: 30px;
-    justify-content: center;
+    justify-content: space-between;
     @media screen and (max-width: 1178px) {
         grid-template-columns: 584px;
     }
@@ -185,9 +194,9 @@ ul.text_heading > li:before {
 .description {
     display: flex;
 }
-.text_descriptions {
-    padding-left: 15px;
-}
+.img_description {
+    margin: 0 10px 0 0;
+    }
 .text_description {
     max-width: 365px;
     min-height: 108px;
@@ -240,8 +249,8 @@ ul.text_heading > li:before {
 /* Блок 4 */
 
 .section_4 {
-    margin-top: 100px;
-    max-width: 100%;
+    margin: 0;
+    width: 100%;
     min-height: 600px;
 }
 .heading_section_4 {
@@ -249,7 +258,7 @@ ul.text_heading > li:before {
     text-align: center;
 }
 .sections {
-    padding-top: 30px;
+    padding: 30px;
     display: grid;
     grid-template-columns: repeat(3, 300px);
     justify-content: center;
@@ -314,6 +323,15 @@ ul.text_heading > li:before {
     font-weight: 700;
     color: #445161;
     text-transform: uppercase;
+<<<<<<< HEAD
+    &:hover {
+        background-color: #1b4d69;
+    }
+    &:active {
+        background-color: #ffffff;
+    }
+=======
+>>>>>>> upstream/lesson
 }
 /* Footer */
 .footer {
@@ -349,9 +367,13 @@ ul.text_heading > li:before {
     line-height: 24px;
     font-weight: 400;
     color: #445162;
+    background-color: #264063;
     border-radius: 5px;
     outline: none;
     padding-left: 10px;
+    &:focus {
+        background-color: #185fbd;
+    }
     @media screen and (max-width: 1178px) {
         width: 300px;
     }
@@ -377,6 +399,12 @@ ul.text_heading > li:before {
     font-weight: 700;
     text-transform: uppercase;
     color: #445162;
+    &:hover {
+        background-color: rgb(42, 10, 184);
+    }
+    &:active {
+        background-color: #fff;
+    }
 }
 .contacts_lines {
     padding-left: 45px;
@@ -394,4 +422,35 @@ ul.text_heading > li:before {
 }
 .social_buttons {
     padding-top: 20px;
+    a {
+        padding-left: 10px;
+    }
+    a:first-child {
+        padding-left: 0;
+    }
+}
+.icon_1 {
+    &:hover {
+        fill: #00acee;
+    }
+}
+.icon_2 {
+    &:hover {
+        fill: #3b5998;
+    }
+}
+.icon_3 {
+    &:hover {
+        fill: #0e76a8;
+    }
+}
+.icon_4 {
+    &:hover {
+        fill: green;
+    }
+}
+.icon_5 {
+    &:hover {
+        fill: red;
+    }
 }
