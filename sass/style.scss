@@ -1,4 +1,8 @@
 $width: 1280px;
+<<<<<<< HEAD:sass/style.scss
+=======
+
+>>>>>>> lesson:styles/style.scss
 @mixin heading_section {
     font-size: 30px;
     line-height: 36px;
@@ -36,6 +40,7 @@ a {
 ul li {
     list-style-type: none;
 }
+<<<<<<< HEAD:sass/style.scss
 
 svg path {
     stroke: inherit;
@@ -47,6 +52,16 @@ svg path {
     outline: 0;
 }
 
+=======
+svg path {
+    stroke:inherit;
+    stroke-width:inherit;
+    fill:inherit;
+    }
+:focus {
+    outline: 0;
+}
+>>>>>>> lesson:styles/style.scss
 body {
     max-width: $width;
     margin: 0 auto;
@@ -105,11 +120,14 @@ ul.text_heading>li:before {
 }
 
 .img_header {
+<<<<<<< HEAD:sass/style.scss
     &:hover {
         transition: all 1s ease;
         height: 123px;
         width: 235px;
     }
+=======
+>>>>>>> lesson:styles/style.scss
     @media screen and (max-width: 1178px) {
         position: static;
     }
@@ -140,6 +158,7 @@ ul.text_heading>li:before {
 }
 
 .img_section_1 {
+<<<<<<< HEAD:sass/style.scss
     &:hover {
         width: 500px;
         height: 300px;
@@ -148,6 +167,8 @@ ul.text_heading>li:before {
         width: 500px;
         height: 300px;
     }
+=======
+>>>>>>> lesson:styles/style.scss
     @media screen and (max-width: 1178px) {
         padding-top: 20px;
     }
@@ -189,7 +210,11 @@ ul.text_heading>li:before {
     font-size: 16px;
     max-width: 540px;
     min-height: 63px;
+<<<<<<< HEAD:sass/style.scss
     margin: 0 0 20px 0;
+=======
+    padding: 0 0 0 30px;
+>>>>>>> lesson:styles/style.scss
     position: relative;
     &:before {
         content: "+";
@@ -206,16 +231,26 @@ ul.text_heading>li:before {
         left: -46px;
     }
 }
+<<<<<<< HEAD:sass/style.scss
 
 .dignity_list_item:last-child {
     margin: 0;
 }
 
 
+=======
+.dignity_list_item:last-child {
+    margin: 0;
+    }
+>>>>>>> lesson:styles/style.scss
 /* 3 Блок */
 
 .section_3 {
     margin: 0;
+<<<<<<< HEAD:sass/style.scss
+=======
+    padding: 50px;
+>>>>>>> lesson:styles/style.scss
     max-width: 100%;
     min-height: 400px;
 }
@@ -247,6 +282,7 @@ ul.text_heading>li:before {
 .description {
     display: flex;
 }
+<<<<<<< HEAD:sass/style.scss
 
 .img_description {
     width: 230px;
@@ -261,6 +297,11 @@ ul.text_heading>li:before {
     margin: 0 10px 0 0;
 }
 
+=======
+.img_description {
+    margin: 0 10px 0 0;
+    }
+>>>>>>> lesson:styles/style.scss
 .text_description {
     max-width: 365px;
     min-height: 108px;
@@ -328,6 +369,10 @@ ul.text_heading>li:before {
 .section_4 {
     margin: 0;
     width: 100%;
+<<<<<<< HEAD:sass/style.scss
+=======
+    min-height: 600px;
+>>>>>>> lesson:styles/style.scss
 }
 
 .heading_section_4 {
@@ -336,6 +381,10 @@ ul.text_heading>li:before {
 }
 
 .sections {
+<<<<<<< HEAD:sass/style.scss
+=======
+    padding: 30px;
+>>>>>>> lesson:styles/style.scss
     display: grid;
     grid-template-columns: repeat(3, 300px);
     justify-content: center;
@@ -409,12 +458,20 @@ ul.text_heading>li:before {
     font-weight: 700;
     color: #445161;
     text-transform: uppercase;
+<<<<<<< HEAD:sass/style.scss
     &:hover {
         background-color: #db4d69;
+=======
+<<<<<<< HEAD
+    &:hover {
+        background-color: #1b4d69;
+>>>>>>> lesson:styles/style.scss
     }
     &:active {
         background-color: #ffffff;
     }
+=======
+>>>>>>> upstream/lesson
 }
 
 
@@ -461,7 +518,10 @@ ul.text_heading>li:before {
     border-radius: 5px;
     outline: none;
     padding-left: 10px;
+<<<<<<< HEAD:sass/style.scss
     margin: 0 0 20px 0;
+=======
+>>>>>>> lesson:styles/style.scss
     &:focus {
         background-color: #185fbd;
     }
@@ -494,9 +554,12 @@ ul.text_heading>li:before {
     font-weight: 700;
     text-transform: uppercase;
     color: #445162;
+<<<<<<< HEAD:sass/style.scss
     display: block;
     margin: 0 auto;
     resize: none;
+=======
+>>>>>>> lesson:styles/style.scss
     &:hover {
         background-color: rgb(42, 10, 184);
     }
@@ -531,31 +594,46 @@ ul.text_heading>li:before {
         padding-left: 0;
     }
 }
+<<<<<<< HEAD:sass/style.scss
 
+=======
+>>>>>>> lesson:styles/style.scss
 .icon_1 {
     &:hover {
         fill: #00acee;
     }
 }
+<<<<<<< HEAD:sass/style.scss
 
+=======
+>>>>>>> lesson:styles/style.scss
 .icon_2 {
     &:hover {
         fill: #3b5998;
     }
 }
+<<<<<<< HEAD:sass/style.scss
 
+=======
+>>>>>>> lesson:styles/style.scss
 .icon_3 {
     &:hover {
         fill: #0e76a8;
     }
 }
+<<<<<<< HEAD:sass/style.scss
 
+=======
+>>>>>>> lesson:styles/style.scss
 .icon_4 {
     &:hover {
         fill: green;
     }
 }
+<<<<<<< HEAD:sass/style.scss
 
+=======
+>>>>>>> lesson:styles/style.scss
 .icon_5 {
     &:hover {
         fill: red;

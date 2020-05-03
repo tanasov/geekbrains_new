@@ -100,6 +100,7 @@ ul.text_heading > li:before {
   color: #ffffff;
 }
 
+<<<<<<< HEAD:css/style.css
 .img_header:hover {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
@@ -107,6 +108,8 @@ ul.text_heading > li:before {
   width: 235px;
 }
 
+=======
+>>>>>>> lesson:styles/style.css
 @media screen and (max-width: 1178px) {
   .img_header {
     position: static;
@@ -145,6 +148,7 @@ ul.text_heading > li:before {
   max-width: 653px;
   min-height: 63px;
   margin: 20px 0 0 0;
+<<<<<<< HEAD:css/style.css
 }
 
 .img_section_1:hover {
@@ -155,6 +159,8 @@ ul.text_heading > li:before {
 .img_section_1:focus {
   width: 500px;
   height: 300px;
+=======
+>>>>>>> lesson:styles/style.css
 }
 
 @media screen and (max-width: 1178px) {
@@ -208,7 +214,11 @@ ul.text_heading > li:before {
   font-size: 16px;
   max-width: 540px;
   min-height: 63px;
+<<<<<<< HEAD:css/style.css
   margin: 0 0 20px 0;
+=======
+  padding: 0 0 0 30px;
+>>>>>>> lesson:styles/style.css
   position: relative;
 }
 
@@ -234,6 +244,10 @@ ul.text_heading > li:before {
 /* 3 Блок */
 .section_3 {
   margin: 0;
+<<<<<<< HEAD:css/style.css
+=======
+  padding: 50px;
+>>>>>>> lesson:styles/style.css
   max-width: 100%;
   min-height: 400px;
 }
@@ -280,6 +294,7 @@ ul.text_heading > li:before {
 }
 
 .img_description {
+<<<<<<< HEAD:css/style.css
   width: 230px;
   height: 130px;
 }
@@ -289,6 +304,8 @@ ul.text_heading > li:before {
 }
 
 .img_description {
+=======
+>>>>>>> lesson:styles/style.css
   margin: 0 10px 0 0;
 }
 
@@ -369,6 +386,10 @@ ul.text_heading > li:before {
 .section_4 {
   margin: 0;
   width: 100%;
+<<<<<<< HEAD:css/style.css
+=======
+  min-height: 600px;
+>>>>>>> lesson:styles/style.css
 }
 
 .heading_section_4 {
@@ -380,6 +401,10 @@ ul.text_heading > li:before {
 }
 
 .sections {
+<<<<<<< HEAD:css/style.css
+=======
+  padding: 30px;
+>>>>>>> lesson:styles/style.css
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (300px)[3];
@@ -476,7 +501,11 @@ ul.text_heading > li:before {
 }
 
 .button_buy:hover {
+<<<<<<< HEAD:css/style.css
   background-color: #db4d69;
+=======
+  background-color: #1b4d69;
+>>>>>>> lesson:styles/style.css
 }
 
 .button_buy:active {
@@ -608,6 +637,14 @@ ul.text_heading > li:before {
   display: block;
   margin: 0 auto;
   resize: none;
+}
+
+.send_button:hover {
+  background-color: #2a0ab8;
+}
+
+.send_button:active {
+  background-color: #fff;
 }
 
 .send_button:hover {
