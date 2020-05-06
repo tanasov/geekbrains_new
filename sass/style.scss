@@ -517,6 +517,8 @@
         
         .contacts_lines {
             padding-left: 45px;
+            width: 241px;
+            margin: 0;
         }
         
         .social_icons {
@@ -528,46 +530,59 @@
             line-height: 24px;
             font-weight: 400;
             color: #ffffff;
-            position: relative;
             bottom: 7px;
+            display: block;
+            margin: 0 0 15px 0;
+            padding: 0 0 0 30px;
+            position: relative;
+            text-align: left;
+            &::before {
+                content: "";
+                display: block;
+                width: 24px;
+                height: 24px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                top: 1px;
+                left: 0;
+            }
+            &:nth-child(1):before {
+                background-image: url(../img/skype_icon_319.png);
+            }
+            &:nth-child(2):before {
+                background-image: url(../img/icq_icon_324.png);
+            }
+            &:nth-child(3):before {
+                background-image: url(../img/email_icon_332.png);
+            }
+            &:nth-child(4):before {
+                background-image: url(../img/phone_icon_337.png);
+            }
         }
         
         .social_buttons {
-            padding-top: 20px;
-            a {
-                padding-left: 10px;
-            }
-            a:first-child {
-                padding-left: 0;
-            }
+            display: flex;
+            width: 300px;
+            padding-left: 45px;
         }
         
-        .icon_1 {
-            &:hover {
-                fill: #00acee;
+        .social-item {
+            display: block;
+            width: 45px;
+            height: 42px;
+            background-image: url(../img/socialbuttons.png);
+            &:nth-child(2) {
+                background-position: -48px 0;
             }
-        }
-        
-        .icon_2 {
-            &:hover {
-                fill: #3b5998;
+            &:nth-child(3) {
+                background-position: -96px 0;
             }
-        }
-        
-        .icon_3 {
-            &:hover {
-                fill: #0e76a8;
+            &:nth-child(4) {
+                background-position: -147px 0;
             }
-        }
-        
-        .icon_4 {
-            &:hover {
-                fill: green;
-            }
-        }
-        
-        .icon_5 {
-            &:hover {
-                fill: red;
+            &:nth-child(5) {
+                background-position: -195px 0;
             }
         }
